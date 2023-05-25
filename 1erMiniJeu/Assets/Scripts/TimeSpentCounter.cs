@@ -30,5 +30,9 @@ public class TimeSpentCounter : MonoBehaviour
             startTime = startTime + timeIncreasedPerSecond *Time.deltaTime;
             yield return null;
         }
+        if(colorsToSpawn.colorsToSpawn.Count == 0 )
+        {
+            colorsToSpawn.TimeText.text = (int)startTime +"";
+        }
     }
 }

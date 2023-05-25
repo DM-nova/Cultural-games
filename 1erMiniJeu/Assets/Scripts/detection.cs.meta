@@ -3,7 +3,12 @@ guid: bde542a10c61c6044b31a6c222cf2e4d
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - floatingTextPrefab: {fileID: 7116098581478770773, guid: d708a3a6450903c4489a6a8e838edf76, type: 3}
+  - score: {instanceID: 0}
+  - go: {instanceID: 0}
+  - colorsToSpawn: {instanceID: 0}
+  - collisionSound: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

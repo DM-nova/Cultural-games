@@ -5564,7 +5564,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1499645144}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bf2e36bc26837d43ac7f63c9a4913bd, type: 3}
+  m_Script: {fileID: 11500000, guid: b725088f33f506147af72e1312264798, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   p1: {fileID: 353085916}
@@ -5705,7 +5705,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 77902505}
         m_TargetAssemblyTypeName: ScenesSwitcher, Assembly-CSharp
-        m_MethodName: mainMenu
+        m_MethodName: writeA
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7117,6 +7117,7 @@ MonoBehaviour:
   hand3: {fileID: 0}
   hand4: {fileID: 0}
   mainHandButton: {fileID: 0}
+  LineGenerationSound: {fileID: 0}
 --- !u!1 &1697038090
 GameObject:
   m_ObjectHideFlags: 0

@@ -36,20 +36,16 @@ public class ScorePerSecond : MonoBehaviour
 
     IEnumerator  decreaseScore()
     { 
-        while (colorsToSpawn.colorsToSpawn.Count != 0)
+        while ((colorsToSpawn.colorsToSpawn.Count != 0) && (scoreAmount>=0))
         {
               scoreText.text =(int)scoreAmount +"";
-              scoreAmount = scoreAmount - pointsDecreasedPerSecond *Time.deltaTime;
+              scoreAmount = scoreAmount - pointsDecreasedPerSecond * Time.deltaTime;
               yield return new WaitForSeconds(0);
         }
-
         if(colorsToSpawn.colorsToSpawn.Count == 0 )
         {
-            Debug.Log("0");
+            colorsToSpawn.ScoreText.text = (int)scoreAmount +"";
         }
     }
 
-} 
-
-    
-
+}

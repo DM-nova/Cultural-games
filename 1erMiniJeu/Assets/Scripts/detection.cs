@@ -5,135 +5,84 @@ using UnityEngine.SceneManagement;
 
 public class detection : MonoBehaviour
 {   
-    public Scoring score;
-    public ColorsManager go;
-    public ColorsManager colorsToSpawn;
-    public List<GameObject> listcolorsToSpawn = new List<GameObject>();
+     public TimeSpentCounter time;
+     public ColorsManager go;
+     public ColorsManager animateSpawner;
+     public ColorsManager colorsToSpawn;
+     public AudioSource collisionSound;
+     
+    
     void Start()
-    {   colorsToSpawn= GameObject.FindObjectOfType<ColorsManager>();
+    {   
+        collisionSound =GameObject.FindObjectOfType<AudioSource>();
+        time = GameObject.FindObjectOfType<TimeSpentCounter>();
+        colorsToSpawn= GameObject.FindObjectOfType<ColorsManager>();
         go = GameObject.FindObjectOfType<ColorsManager>();
-       score = GameObject.FindObjectOfType<Scoring>();
-       listcolorsToSpawn = colorsToSpawn.colorsToSpawn;       
+        animateSpawner = GameObject.FindObjectOfType<ColorsManager>();
     }
 
     void Update()
     {
         
-    }
+    } 
     
+   IEnumerator Waiting(GameObject thiss, Collider2D otherr)
+   {
+       LeanTween.scale(thiss.gameObject, new Vector3(0f,0f,0f),0f).setEase(LeanTweenType.easeInOutCubic);
+       collisionSound.Play();
+       LeanTween.scale(otherr.gameObject, new Vector3(0f,0f,0f),0.1f).setDelay(0f).setEase(LeanTweenType.easeInOutCubic);
+       yield return new WaitForSeconds(1);
+       Destroy (otherr.gameObject);
+       colorsToSpawn.RemoveColor(thiss.name);
+       Destroy(thiss.gameObject);
+       animateSpawner.SpawnerAnimation();
+       go.ColorSpawn();
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {  
-        
-        //Debug.Log("Triggered");
-        if( other.CompareTag("Rouge") && this.CompareTag("Rouge"))
-        {   score.AddScore(1);
-            int indexOfYourGameObject = listcolorsToSpawn.IndexOf(this.gameObject);
-            Debug.Log("red");
-            Destroy (other.gameObject);
-            Destroy(this.gameObject);
-            
-            colorsToSpawn.RemoveColor(indexOfYourGameObject);
-            go.ColorSpawn();
+         if( other.CompareTag("Rouge") && this.CompareTag("Rouge"))
+        {   
+            StartCoroutine(Waiting(this.gameObject,other));
         }
         else if (other.CompareTag("Jaune") && this.CompareTag("Jaune"))
-        {   score.AddScore(1);
-            int indexOfYourGameObject = listcolorsToSpawn.IndexOf(this.gameObject);
-            Debug.Log("yellow");
-            Destroy (other.gameObject);
-            Destroy(this.gameObject);
-            colorsToSpawn.RemoveColor(indexOfYourGameObject);
-            go.ColorSpawn();
-
+        {   
+            StartCoroutine(Waiting(this.gameObject,other));
         }
         else if (other.CompareTag("Vert") && this.CompareTag("Vert"))
-        {   score.AddScore(1);
-            int indexOfYourGameObject = listcolorsToSpawn.IndexOf(this.gameObject);
-            Debug.Log("green");
-            Destroy (other.gameObject);
-            Destroy(this.gameObject);
-            colorsToSpawn.RemoveColor(indexOfYourGameObject);
-             go.ColorSpawn();
-
+        {   
+            StartCoroutine(Waiting(this.gameObject,other));
         }
         else if (other.CompareTag("Bleu") && this.CompareTag("Bleu"))
-        {   score.AddScore(1);
-            int indexOfYourGameObject = listcolorsToSpawn.IndexOf(this.gameObject);
-            Debug.Log("blue");
-            Destroy (other.gameObject);
-            Destroy(this.gameObject);
-            colorsToSpawn.RemoveColor(indexOfYourGameObject);
-            go.ColorSpawn();
-
+        {  
+           StartCoroutine(Waiting(this.gameObject,other));
         }
         else if (other.CompareTag("Rose") && this.CompareTag("Rose"))
-        {   score.AddScore(1);
-            int indexOfYourGameObject = listcolorsToSpawn.IndexOf(this.gameObject);
-            Debug.Log("pink");
-            Destroy (other.gameObject);
-            Destroy(this.gameObject);
-            colorsToSpawn.RemoveColor(indexOfYourGameObject);
-            go.ColorSpawn();
-
+        {   
+           StartCoroutine(Waiting(this.gameObject,other));
         }
         else if (other.CompareTag("Blanc") && this.CompareTag("Blanc"))
-        {   score.AddScore(1);
-            int indexOfYourGameObject = listcolorsToSpawn.IndexOf(this.gameObject);
-            Debug.Log("blanc");
-            Destroy (other.gameObject);
-            Destroy(this.gameObject);
-            colorsToSpawn.RemoveColor(indexOfYourGameObject);
-             go.ColorSpawn();
-
+        {   
+           StartCoroutine(Waiting(this.gameObject,other));
         }
         else if (other.CompareTag("Orangé") && this.CompareTag("Orangé"))
-        {   score.AddScore(1);
-            int indexOfYourGameObject = listcolorsToSpawn.IndexOf(this.gameObject);
-            Debug.Log("orange");
-            Destroy (other.gameObject);
-            Destroy(this.gameObject);
-            colorsToSpawn.RemoveColor(indexOfYourGameObject);
-             go.ColorSpawn();
-
+        {   
+            StartCoroutine(Waiting(this.gameObject,other));
         }
         else if (other.CompareTag("Violet") && this.CompareTag("Violet"))
-        {   score.AddScore(1);
-            int indexOfYourGameObject = listcolorsToSpawn.IndexOf(this.gameObject);
-            Debug.Log("purple");
-            Destroy (other.gameObject);
-            Destroy(this.gameObject);
-            colorsToSpawn.RemoveColor(indexOfYourGameObject);
-             go.ColorSpawn();
-
-        }
-        else if (other.CompareTag("Noire") && this.CompareTag("Noire"))
-        {   score.AddScore(1);
-            int indexOfYourGameObject = listcolorsToSpawn.IndexOf(this.gameObject);
-            Debug.Log("black");
-            Destroy (other.gameObject);
-            Destroy(this.gameObject);
-            colorsToSpawn.RemoveColor(indexOfYourGameObject);
-            go.ColorSpawn();
-
+        {   
+           StartCoroutine(Waiting(this.gameObject,other));
         }
         else if (other.CompareTag("Marron") && this.CompareTag("Marron"))
-        {   score.AddScore(1);
-            int indexOfYourGameObject = listcolorsToSpawn.IndexOf(this.gameObject);
-            Debug.Log("brown");
-            Destroy (other.gameObject);
-            Destroy(this.gameObject);
-            colorsToSpawn.RemoveColor(indexOfYourGameObject);
-             go.ColorSpawn();
-
+        {   
+            StartCoroutine(Waiting(this.gameObject,other));
         }
-        else 
-        {
-            SceneManager.LoadScene(1);
+        else if (other.CompareTag("Noire") && this.CompareTag("Noire"))
+        {  
+            StartCoroutine(Waiting(this.gameObject,other));
         }
         
-
-        
-        
-    }
-    }
+       
+    }}
+    
 

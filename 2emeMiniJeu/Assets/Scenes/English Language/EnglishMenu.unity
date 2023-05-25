@@ -473,9 +473,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 510076999}
-        m_TargetAssemblyTypeName: Tween, Assembly-CSharp
-        m_MethodName: PanelFadeOut
+      - m_Target: {fileID: 210476850}
+        m_TargetAssemblyTypeName: ScenesSwitcher, Assembly-CSharp
+        m_MethodName: writeB
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
