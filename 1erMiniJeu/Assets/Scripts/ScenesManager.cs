@@ -23,6 +23,10 @@ public class ScenesManager : MonoBehaviour
     {   
        SceneManager.LoadScene(3);
     }
+     public void LettersSecondLevel()
+    {   
+       SceneManager.LoadScene(4);
+    }
     
 
 }

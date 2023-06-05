@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Unity.Services.Core;
+using Unity.Services.Analytics;
+using System.Collections.Generic;
 
 public class ColorsManager : MonoBehaviour
 {    
@@ -16,6 +19,8 @@ public class ColorsManager : MonoBehaviour
      public Text TimeText,ScoreText;
      ScorePerSecond ScorePerSecond;
      public int scoreAmount;
+
+     bool isDone = false;
      
      
 
@@ -30,20 +35,26 @@ public class ColorsManager : MonoBehaviour
         ColorSpawn();
 
     }
+    
 
     void Update(){
 
-        if(colorsToSpawn.Count == 0 )
+        if(colorsToSpawn.Count == 0 &&  (!isDone) )
         {
             GoodJobTween.head1();
+            isDone = true;
+           // Analystics.CustomEvent("LevelWin" + GameProgress.head1());
+           // Debug.Log("ok");
         }
        scoreAmount = (int)ScorePerSecond.scoreAmount;
-        if(scoreAmount == 0 )
-        {
+        if(scoreAmount == 0  &&  (!isDone))
+        {   StartCoroutine("destroyFixedColors");
             GameOverTween.head2();
+            isDone = true;
         }
 
     }
+    
     public void SpawnerAnimation()
     {
         LeanTween.moveLocal(Spawner,new Vector3(0f,175f,0f),2f).setDelay(0f)/*.setEase(LeanTweenType.easeOutElastic)*/;
@@ -54,12 +65,19 @@ public class ColorsManager : MonoBehaviour
     {
         foreach(var c in FixedColors)
            {  yield return new WaitForSeconds(0.1f);
-             LeanTween.scale(c,new Vector3(12f,12f,1f),0f)/*.setDelay(.8f)*/.setEase(LeanTweenType.easeOutBounce);
+             LeanTween.scale(c,new Vector3(11f,11f,1f),0f)/*.setDelay(.8f)*/.setEase(LeanTweenType.easeOutBounce);
              pop.Play();
-             yield return new WaitForSeconds(0.05f);
+             yield return new WaitForSeconds(0.0000001f);
             }
     }
-
+IEnumerator destroyFixedColors()
+    {
+        foreach(var c in FixedColors)
+           { 
+               Destroy(c);
+               yield return new WaitForSeconds(0f);
+           }
+           }
     public void ColorSpawn()
     {   
         int index= isRandomized ?Random.Range(0, colorsToSpawn.Count):0;

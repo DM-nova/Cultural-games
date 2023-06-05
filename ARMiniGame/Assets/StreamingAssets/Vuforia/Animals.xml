@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig>
+  <Tracking>
+    <ImageTarget name="Wolf" size="6.000000 4.323529" />
+    <ImageTarget name="Bear" size="6.000000 3.642496" />
+    <ImageTarget name="tigerrrr" size="6.000000 6.000000" />
+  </Tracking>
+</QCARConfig>

@@ -27,7 +27,7 @@ public class ScorePerSecond : MonoBehaviour
         ScoreCoroutine = decreaseScore();
         StartCoroutine(ScoreCoroutine);
         
-        scoreAmount = 10f;
+        scoreAmount = 500f;
         pointsDecreasedPerSecond = 1f;
     }
 

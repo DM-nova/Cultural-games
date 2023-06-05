@@ -14,10 +14,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ColorsSecondLevel.unity
     guid: 6633506e7976bea489102dd896424fc2
+  - enabled: 1
+    path: Assets/Scenes/LettersFirstLevel.unity
+    guid: db05d005e743d554e95f64667b872e85
+  - enabled: 1
+    path: Assets/Scenes/LettersSecondLevel.unity
+    guid: fdb60584de325394aa85af64b576fdc0
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/Scenes/SecondLevel.unity
     guid: 6243ce0e8d15a3a46aa5603f0a0095cc
   - enabled: 0
@@ -29,4 +38,5 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 5cb93b2ae220f4b42a0b9b58cf6984db, type: 2}

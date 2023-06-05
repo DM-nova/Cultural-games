@@ -18,11 +18,11 @@ public class ScenesSwitcher : MonoBehaviour
     }
 public void writeA()
     {   
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(3);
     }
 public void writeB()
     {   
-        SceneManager.LoadScene(3);
+        SceneManager.LoadScene(4);
     }
 public void mainMenu()
     {   

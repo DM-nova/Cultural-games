@@ -38,43 +38,43 @@ public class detection2 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {  
-         if( other.CompareTag("Rouge") && this.CompareTag("Rouge"))
+         if( other.CompareTag("a") && this.CompareTag("a"))
         {   
             StartCoroutine(Waiting(this.gameObject,other));
         }
-        else if (other.CompareTag("Jaune") && this.CompareTag("Jaune"))
+        else if (other.CompareTag("b") && this.CompareTag("b"))
         {   
             StartCoroutine(Waiting(this.gameObject,other));
         }
-        else if (other.CompareTag("Vert") && this.CompareTag("Vert"))
+        else if (other.CompareTag("c") && this.CompareTag("c"))
         {   
             StartCoroutine(Waiting(this.gameObject,other));
         }
-        else if (other.CompareTag("Bleu") && this.CompareTag("Bleu"))
+        else if (other.CompareTag("d") && this.CompareTag("d"))
         {  
            StartCoroutine(Waiting(this.gameObject,other));
         }
-        else if (other.CompareTag("Rose") && this.CompareTag("Rose"))
+        else if (other.CompareTag("e") && this.CompareTag("e"))
         {   
            StartCoroutine(Waiting(this.gameObject,other));
         }
-        else if (other.CompareTag("Blanc") && this.CompareTag("Blanc"))
+        else if (other.CompareTag("f") && this.CompareTag("f"))
         {   
            StartCoroutine(Waiting(this.gameObject,other));
         }
-        else if (other.CompareTag("Orangé") && this.CompareTag("Orangé"))
+        else if (other.CompareTag("g") && this.CompareTag("g"))
         {   
             StartCoroutine(Waiting(this.gameObject,other));
         }
-        else if (other.CompareTag("Violet") && this.CompareTag("Violet"))
+        else if (other.CompareTag("h") && this.CompareTag("h"))
         {   
            StartCoroutine(Waiting(this.gameObject,other));
         }
-        else if (other.CompareTag("Marron") && this.CompareTag("Marron"))
+        else if (other.CompareTag("i") && this.CompareTag("i"))
         {   
             StartCoroutine(Waiting(this.gameObject,other));
         }
-        else if (other.CompareTag("Noire") && this.CompareTag("Noire"))
+        else if (other.CompareTag("j") && this.CompareTag("j"))
         {  
             StartCoroutine(Waiting(this.gameObject,other));
         }

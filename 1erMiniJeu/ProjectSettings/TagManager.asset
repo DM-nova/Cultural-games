@@ -25,6 +25,8 @@ TagManager:
   - g
   - h
   - BGMusic
+  - i
+  - j
   layers:
   - Default
   - TransparentFX

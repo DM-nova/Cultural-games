@@ -9,6 +9,6 @@ public class Accelerometre : MonoBehaviour
     {}
     void Update()
     {
-       transform.Translate(new Vector2(Input.acceleration.x,Input.acceleration.y)*Time.deltaTime *150f); 
+       transform.Translate(new Vector2(Input.acceleration.x,Input.acceleration.y)*Time.deltaTime *200f); 
     }
 }

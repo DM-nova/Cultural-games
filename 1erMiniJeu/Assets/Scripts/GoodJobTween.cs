@@ -9,7 +9,7 @@ public class GoodJobTween : MonoBehaviour
    
     void Start()
     {
-        //head1();
+    //head1();
     }
 
     void Update()
