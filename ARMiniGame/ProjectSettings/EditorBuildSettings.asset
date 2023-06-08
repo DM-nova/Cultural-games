@@ -11,4 +11,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ARScene.unity
     guid: 393df9c0253a27f4fb7b679dff869a4b
-  m_configObjects: {}
+  m_configObjects:
+    UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: 83ab8463e9659e749936ac83729975b3, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: c8b3ab0bf922f01469d13f909cb11b31, type: 2}
