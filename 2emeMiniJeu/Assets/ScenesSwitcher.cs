@@ -227,7 +227,7 @@ public void writeB()
 
     public void FirstMenu()
     {   
-        SceneManager.LoadScene("FirstMenu");
+        SceneManager.LoadScene("MenuJEU2");
     }
      public void EnglishMenu()
     {   

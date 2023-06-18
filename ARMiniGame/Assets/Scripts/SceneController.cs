@@ -15,11 +15,11 @@ public class SceneController : MonoBehaviour
     public void MainMenu()
     {
         
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene("MenuJEU3");
     }
     public void ARScene()
     {   
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene("ARScene");
     }
     public void QuitApp()
     {  

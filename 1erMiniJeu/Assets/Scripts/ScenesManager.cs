@@ -14,7 +14,7 @@ public class ScenesManager : MonoBehaviour
 
     public void MenuScene()
     {
-       SceneManager.LoadScene("MainMenu");
+       SceneManager.LoadScene("MenuJEU1");
     }
     public void ColorsFirstLevel()
     {   
