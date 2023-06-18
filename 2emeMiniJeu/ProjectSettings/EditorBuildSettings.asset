@@ -27,17 +27,146 @@ EditorBuildSettings:
     path: Assets/Scenes/English Language/WriteE.unity
     guid: 0dc9b7ba933935a46aa2ebb4cd836d1f
   - enabled: 1
+    path: Assets/Scenes/English Language/WriteD.unity
+    guid: 85360f99b5e0c724087fef6847279c9d
+  - enabled: 1
     path: Assets/Scenes/Arabic Language/WriteAarabic.unity
     guid: 181f0f6fbd5330f4dbb607bb8a2269ec
   - enabled: 1
     path: Assets/Scenes/Arabic Language/WriteBarabic.unity
     guid: d934f8bfe67a8c24698f0067e77816e4
   - enabled: 1
+    path: Assets/Scenes/Arabic Language/WriteMarabic.unity
+    guid: 2496d8766563d2248b0a3ca74b5fdd62
+  - enabled: 1
+    path: Assets/Scenes/Arabic Language/WriteNarabic.unity
+    guid: f9732131f6662a0418f58e3688d8b976
+  - enabled: 1
+    path: Assets/Scenes/Arabic Language/WriteRarabic.unity
+    guid: 54019869d1250954a964479150818c99
+  - enabled: 1
+    path: Assets/Scenes/Arabic Language/WriteSAAarabic.unity
+    guid: 6d4c71121d061a24dbd497a9cfba25ec
+  - enabled: 1
+    path: Assets/Scenes/Arabic Language/WriteSarabic.unity
+    guid: 996053c91e2495942b0f6725f89f1ee8
+  - enabled: 1
+    path: Assets/Scenes/Arabic Language/WriteTAAAarabic.unity
+    guid: a130e9c4ccfd38744a344ee3a235e677
+  - enabled: 1
     path: Assets/Scenes/Arabic Language/WriteTarabic.unity
     guid: d57385889a838bb468c107f703c4d988
   - enabled: 1
     path: Assets/Scenes/Arabic Language/WriteTHarabic.unity
     guid: 149beeb28d82b63468b650cab1c97675
+  - enabled: 1
+    path: Assets/Scenes/Arabic Language/WriteWAarabic.unity
+    guid: bf83b0d52f0532c4a99cd270a90becfe
+  - enabled: 1
+    path: Assets/Scenes/Arabic Language/Write3Aarabic.unity
+    guid: d5b688b4075906d41be28ceddaed2321
+  - enabled: 1
+    path: Assets/Scenes/Arabic Language/Write7arabic.unity
+    guid: fbad7f7e2a28e204e9b2a5991a97216b
+  - enabled: 1
+    path: Assets/Scenes/Arabic Language/Write9Aarabic.unity
+    guid: 04418dd4d041b5146ac223adbfd21329
+  - enabled: 1
+    path: Assets/Scenes/Arabic Language/WriteCHarabic.unity
+    guid: add92cf99db129d4f99953e5773867ad
+  - enabled: 1
+    path: Assets/Scenes/Arabic Language/WriteDarabic.unity
+    guid: dcb873168ff83b2488bd5ea08ca286f8
+  - enabled: 1
+    path: Assets/Scenes/Arabic Language/WriteDHA1Aarabic 1.unity
+    guid: 70d82da9e68b2ee499cdf17f886fc203
+  - enabled: 1
+    path: Assets/Scenes/Arabic Language/WriteDHA2arabic.unity
+    guid: 0a4b91b8217685a489300c375c124335
+  - enabled: 1
+    path: Assets/Scenes/Arabic Language/WriteDHarabic.unity
+    guid: d08ac5db26aa6f54a9724780d3f12d64
+  - enabled: 1
+    path: Assets/Scenes/Arabic Language/WriteFarabic.unity
+    guid: 210c738de644c7e47922528bfc624ddc
+  - enabled: 1
+    path: Assets/Scenes/Arabic Language/WriteGHAarabic.unity
+    guid: a936d4256b03adb4097971b1f13a4c1c
+  - enabled: 1
+    path: Assets/Scenes/Arabic Language/WriteHarabic.unity
+    guid: 8b3b6f39abe08d44c854f59a549d53b5
+  - enabled: 1
+    path: Assets/Scenes/Arabic Language/WriteJarabic.unity
+    guid: fc54eda3f7e1fef47b8228482b5ba892
+  - enabled: 1
+    path: Assets/Scenes/Arabic Language/WriteKAarabic.unity
+    guid: 07420e8663f3c58469c85104dc536996
+  - enabled: 1
+    path: Assets/Scenes/Arabic Language/WriteKHarabic.unity
+    guid: a04220d12a6d65949aaf0920c45e7cb2
+  - enabled: 1
+    path: Assets/Scenes/Arabic Language/WriteLArabic.unity
+    guid: 7d0d68346e1f4274a9e5560e7ec1c2cd
+  - enabled: 1
+    path: Assets/Scenes/Arabic Language/WriteYarabic.unity
+    guid: 941de9ec024fdc543b12c2f1257a96dc
+  - enabled: 1
+    path: Assets/Scenes/Arabic Language/WriteZarabic.unity
+    guid: a3100b7bc1b89194db7470f8b748b2a3
+  - enabled: 1
+    path: Assets/Scenes/English Language/WriteO.unity
+    guid: 807162ba36f60d24188888cae485ae6c
+  - enabled: 1
+    path: Assets/Scenes/English Language/WriteP.unity
+    guid: 9d14b2d225f920b44b8d3f388469f240
+  - enabled: 1
+    path: Assets/Scenes/English Language/WriteW.unity
+    guid: 3cf9eedfe77041c4b9a1a99798748139
+  - enabled: 1
+    path: Assets/Scenes/English Language/WriteS.unity
+    guid: e550b3c0c2ef1c34dbc18c13e5ac2242
+  - enabled: 1
+    path: Assets/Scenes/English Language/WriteT.unity
+    guid: 5943282b62e167e41b7aad1aa10fa14a
+  - enabled: 1
+    path: Assets/Scenes/English Language/WriteV.unity
+    guid: 015e02c8f6f68ba41a94c6cb463436ef
+  - enabled: 1
+    path: Assets/Scenes/English Language/WriteQ.unity
+    guid: 007e3d6b55a26584987bff8d48975fe6
+  - enabled: 1
+    path: Assets/Scenes/English Language/WriteU.unity
+    guid: bc5391f9cf16bd5468c24079026a809e
+  - enabled: 1
+    path: Assets/Scenes/English Language/WriteR.unity
+    guid: 525a0dc33aeecaf48a4e4cdc83371a7b
+  - enabled: 1
+    path: Assets/Scenes/English Language/WriteM.unity
+    guid: 8fc13090a5d9add45bc02a0f7380f59d
+  - enabled: 1
+    path: Assets/Scenes/English Language/WriteN.unity
+    guid: a526c17a0dccd9e4b920e73a95a244e0
+  - enabled: 1
+    path: Assets/Scenes/English Language/WriteL.unity
+    guid: 6c9cc71e00b3b314782937c53dda2537
+  - enabled: 1
+    path: Assets/Scenes/English Language/WriteF.unity
+    guid: 1b116b79ed1977543862a46df69b4c8c
+  - enabled: 1
+    path: Assets/Scenes/English Language/WriteJ.unity
+    guid: 4050e7a11f3238b499030ba6ed5f37c1
+  - enabled: 1
+    path: Assets/Scenes/English Language/WriteK.unity
+    guid: 9bc08f23cb406544e8826c3a88150de1
+  - enabled: 1
+    path: Assets/Scenes/English Language/WriteG.unity
+    guid: 93f6e5821033aaf4fb6545096deabf90
+  - enabled: 1
+    path: Assets/Scenes/English Language/WriteH.unity
+    guid: aa7b04376e66f244b9694f269de51cd2
+  - enabled: 1
+    path: Assets/Scenes/English Language/Writei.unity
+    guid: e57ecb722daeaba4387f787712b853b3
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000

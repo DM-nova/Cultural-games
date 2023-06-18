@@ -2,6 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Unity.Services.Core;
+using Unity.Services.Core.Analytics;
+using Unity.Services.Analytics;
+using System.Collections.Generic;
+using UnityEngine.Analytics;
 
 public class TimeSpentCounter : MonoBehaviour
 {    
@@ -33,6 +38,10 @@ public class TimeSpentCounter : MonoBehaviour
         if(colorsToSpawn.colorsToSpawn.Count == 0 )
         {
             colorsToSpawn.TimeText.text = (int)startTime +"";
+            
+
         }
     }
+
+    
 }

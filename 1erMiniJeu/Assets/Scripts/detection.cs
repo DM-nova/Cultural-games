@@ -17,6 +17,7 @@ public class detection : MonoBehaviour
         collisionSound =GameObject.FindObjectOfType<AudioSource>();
         time = GameObject.FindObjectOfType<TimeSpentCounter>();
         colorsToSpawn= GameObject.FindObjectOfType<ColorsManager>();
+       
         go = GameObject.FindObjectOfType<ColorsManager>();
         animateSpawner = GameObject.FindObjectOfType<ColorsManager>();
     }

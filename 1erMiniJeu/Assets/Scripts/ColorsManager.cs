@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Unity.Services.Core;
+using Unity.Services.Core.Analytics;
 using Unity.Services.Analytics;
 using System.Collections.Generic;
+using UnityEngine.Analytics;
 
 public class ColorsManager : MonoBehaviour
 {    
@@ -30,7 +32,7 @@ public class ColorsManager : MonoBehaviour
         GoodJobTween = GameObject.FindObjectOfType<GoodJobTween>();
         GameOverTween = GameObject.FindObjectOfType<GameOverTween>();
         ScorePerSecond = GameObject.FindObjectOfType<ScorePerSecond>();
-        StartCoroutine("FixedColorsAnimation");
+       // StartCoroutine("FixedColorsAnimation");
         SpawnerAnimation();
         ColorSpawn();
 
@@ -43,14 +45,15 @@ public class ColorsManager : MonoBehaviour
         {
             GoodJobTween.head1();
             isDone = true;
-           // Analystics.CustomEvent("LevelWin" + GameProgress.head1());
-           // Debug.Log("ok");
+          
         }
        scoreAmount = (int)ScorePerSecond.scoreAmount;
         if(scoreAmount == 0  &&  (!isDone))
         {   StartCoroutine("destroyFixedColors");
             GameOverTween.head2();
             isDone = true;
+         
+          
         }
 
     }

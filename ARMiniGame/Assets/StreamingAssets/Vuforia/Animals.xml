@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig>
   <Tracking>
+    <ImageTarget name="elephant" size="6.000000 4.580087" />
     <ImageTarget name="cowTodraw" size="6.000000 4.913684" />
+    <ImageTarget name="wolfToColor" size="6.000000 5.992500" />
+    <ImageTarget name="rabbittodraw" size="6.000000 7.710844" />
+    <ImageTarget name="sheepTocolor" size="6.000000 4.962500" />
+    <ImageTarget name="bearTocolor" size="6.000000 7.750760" />
   </Tracking>
 </QCARConfig>

@@ -7,12 +7,13 @@ public class MovingHands : MonoBehaviour
 {
     [SerializeField] GameObject hands ;
     [SerializeField] GameObject Ball ;
-    [SerializeField] GameObject  MenuBox, choose, colorsButton, startButtonColors, lettersButton, startButtonLetters,colorWheel;
+    [SerializeField] GameObject  MenuBox, choose, colorsButton, startButtonColors, lettersButton, startButtonLetters,colorWheel, ColorsLevelsBOX,LettersLevelsBOX;
     [SerializeField] AudioSource titleShowUp, boxSlide,bg;
 
     void Start()
     {  
         StartCoroutine("moveHands");
+       
     }
     void Update()
     {}
@@ -27,6 +28,14 @@ public class MovingHands : MonoBehaviour
         yield return new WaitForSeconds(10f);
         bg.Play();
             
+    }
+    public void ColorsLevels()
+    {
+        LeanTween.scale(ColorsLevelsBOX,new Vector3(2.123125f,1f,0f),1f).setDelay(0f).setEase(LeanTweenType.easeOutElastic);
+    }
+    public void LettersLevels()
+    {
+        LeanTween.scale(LettersLevelsBOX,new Vector3(2.123125f,1f,0f),1f).setDelay(0f).setEase(LeanTweenType.easeOutElastic);
     }
     
     public void Choose()

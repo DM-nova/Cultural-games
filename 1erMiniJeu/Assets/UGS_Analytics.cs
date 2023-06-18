@@ -5,7 +5,7 @@ using Unity.Services.Analytics;
 using Unity.Services.Core;
 using Unity.Services.Core.Analytics;
 public class UGS_Analytics : MonoBehaviour
-{
+{ 
 async void Start()
    {
 try
@@ -20,17 +20,15 @@ Debug.Log(e.ToString());
    }
 private void LevelCompletedCustomEvent()
    {
-int currentLevel = Random.Range(1, 4); //Gets a random number from 1-3
-//Define Custom Parameters
 Dictionary<string, object> parameters = new Dictionary<string, object>()
-       {
-           { "levelName", "level" + currentLevel.ToString()}
-       };
-
-// The ‘levelCompleted’ event will get cached locally 
-   //and sent during the next scheduled upload, within 1 minute
-AnalyticsService.Instance.CustomData("levelCompleted", parameters);
-// You can call Events.Flush() to send the event immediately
+{
+    { "levelName", 1}
+};
+// The ‘myEvent’ event will get queued up and sent every minute
+AnalyticsService.Instance.CustomData("levelCompleted", parameters); 
 AnalyticsService.Instance.Flush();
    }
 }
+
+    
+  

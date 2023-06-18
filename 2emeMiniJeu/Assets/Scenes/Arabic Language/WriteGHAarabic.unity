@@ -2863,7 +2863,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 77902505}
         m_TargetAssemblyTypeName: ScenesSwitcher, Assembly-CSharp
-        m_MethodName: FirstMenu
+        m_MethodName: arabicMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3070,9 +3070,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: WritingHandTween, Assembly-CSharp
-        m_MethodName: atlaa
+      - m_Target: {fileID: 77902505}
+        m_TargetAssemblyTypeName: ScenesSwitcher, Assembly-CSharp
+        m_MethodName: writeArbFA
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -6324,7 +6324,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 77902505}
         m_TargetAssemblyTypeName: ScenesSwitcher, Assembly-CSharp
-        m_MethodName: mainMenu
+        m_MethodName: writeArb3A
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

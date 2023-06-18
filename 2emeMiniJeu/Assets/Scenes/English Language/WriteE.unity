@@ -2558,7 +2558,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 77902505}
         m_TargetAssemblyTypeName: ScenesSwitcher, Assembly-CSharp
-        m_MethodName: FirstMenu
+        m_MethodName: EnglishMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2919,7 +2919,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 77902505}
         m_TargetAssemblyTypeName: ScenesSwitcher, Assembly-CSharp
-        m_MethodName: writeB
+        m_MethodName: writeF
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5075,7 +5075,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 77902505}
         m_TargetAssemblyTypeName: ScenesSwitcher, Assembly-CSharp
-        m_MethodName: mainMenu
+        m_MethodName: writeD
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
