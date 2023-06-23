@@ -27,6 +27,8 @@ TagManager:
   - BGMusic
   - i
   - j
+  - Cbutton1
+  - Cbutton2
   layers:
   - Default
   - TransparentFX

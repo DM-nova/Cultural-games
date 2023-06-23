@@ -29,9 +29,9 @@ public class detection : MonoBehaviour
     
    IEnumerator Waiting(GameObject thiss, Collider2D otherr)
    {
-       LeanTween.scale(thiss.gameObject, new Vector3(0f,0f,0f),0f).setEase(LeanTweenType.easeInOutCubic);
+       LeanTween.scale(thiss.gameObject, new Vector3(0f,0f,0f),0.2f).setDelay(0.2f).setEase(LeanTweenType.easeInOutCubic);
        collisionSound.Play();
-       LeanTween.scale(otherr.gameObject, new Vector3(0f,0f,0f),0.1f).setDelay(0f).setEase(LeanTweenType.easeInOutCubic);
+       LeanTween.scale(otherr.gameObject, new Vector3(0f,0f,0f),02f).setDelay(0f).setEase(LeanTweenType.easeInOutCubic);
        yield return new WaitForSeconds(1);
        Destroy (otherr.gameObject);
        colorsToSpawn.RemoveColor(thiss.name);

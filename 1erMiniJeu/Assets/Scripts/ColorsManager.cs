@@ -18,13 +18,13 @@ public class ColorsManager : MonoBehaviour
      public bool isRandomized;
      GoodJobTween GoodJobTween;
      GameOverTween GameOverTween;
-     public Text TimeText,ScoreText;
+     public Text TimeText,ScoreText,TimeText2,ScoreText2;
      ScorePerSecond ScorePerSecond;
      public int scoreAmount;
 
-     bool isDone = false;
-     
-     
+     public GameObject WinPanel,LosePanel,tim;
+
+     bool isDone = false;     
 
     void Start()
     {  
@@ -43,6 +43,8 @@ public class ColorsManager : MonoBehaviour
 
         if(colorsToSpawn.Count == 0 &&  (!isDone) )
         {
+            LosePanel.SetActive(false);
+            WinPanel.SetActive(true);
             GoodJobTween.head1();
             isDone = true;
           
@@ -50,10 +52,10 @@ public class ColorsManager : MonoBehaviour
        scoreAmount = (int)ScorePerSecond.scoreAmount;
         if(scoreAmount == 0  &&  (!isDone))
         {   StartCoroutine("destroyFixedColors");
+            WinPanel.SetActive(false);
+            LosePanel.SetActive(true);
             GameOverTween.head2();
-            isDone = true;
-         
-          
+            isDone = true;          
         }
 
     }

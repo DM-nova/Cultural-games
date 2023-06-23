@@ -42,7 +42,7 @@ public class GameOverTween : MonoBehaviour
     }
     public void speedUp()
     {
-        speedup.Play();
+       // speedup.Play();
     }
 
     public void notifPopup()

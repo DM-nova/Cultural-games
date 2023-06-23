@@ -27,15 +27,15 @@ public class FollowApoints : MonoBehaviour
     }
     public void RedColor()
     {
-        LeanTween.scale(point1,new Vector3(0.042464168f,0.08388975f,0f),0f).setDelay(0f).setEase(LeanTweenType.easeOutElastic);
+        LeanTween.scale(point1,new Vector3(0.042464168f,0.08388975f,0f),0.5f).setDelay(0.5f).setEase(LeanTweenType.easeOutElastic);
     }
      public void point1click()
      {
-           LeanTween.scale(point2,new Vector3(0.0473485f,0.08544924f,0f),1f).setDelay(0f);
+           LeanTween.scale(point2,new Vector3(0.0473485f,0.08544924f,0f),0.5f).setDelay(0.5f);
      }
      public void point2click()
      {  LeanTween.scale(Line1,new Vector3(0.1286027f,0.03203786f,0f),0f).setDelay(2f);
-      LeanTween.scale(point3,new Vector3(0.05f,0.1f,0f),1f).setDelay(0f);
+      LeanTween.scale(point3,new Vector3(0.05f,0.1f,0f),0.5f).setDelay(0.5f);
         
         
         
@@ -43,12 +43,12 @@ public class FollowApoints : MonoBehaviour
      }
      public void point3click()
      {   LeanTween.scale(Line2,new Vector3(0.1314349f,0.03274342f,0f),0f).setDelay(2f);
-         LeanTween.scale(point4,new Vector3(0.04396641f,0.1062951f,0f),1f).setDelay(0f);
+         LeanTween.scale(point4,new Vector3(0.04396641f,0.1062951f,0f),0.5f).setDelay(0.5f);
      }
      public void point4click()
      {
         
-        LeanTween.scale(point5,new Vector3(0.05f,0.1f,0f),1f).setDelay(0f);
+        LeanTween.scale(point5,new Vector3(0.05f,0.1f,0f),0.5f).setDelay(0.5f);
 
      }
      public void point5click()

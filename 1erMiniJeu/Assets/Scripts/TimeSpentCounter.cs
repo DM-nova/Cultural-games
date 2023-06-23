@@ -15,10 +15,15 @@ public class TimeSpentCounter : MonoBehaviour
     public Text timeText;
     public float startTime;
     public float timeIncreasedPerSecond;
+   public ScorePerSecond ScorePerSecond;
+    public float scoreAmount;
+    DataManager DataManager;
     
     void Start()
     {  
+       DataManager = FindObjectOfType<DataManager>();
         colorsToSpawn= GameObject.FindObjectOfType<ColorsManager>();
+        ScorePerSecond = GameObject.FindObjectOfType<ScorePerSecond>();
         TimeCoroutine = IncreaseTime();
         StartCoroutine(TimeCoroutine);
         startTime = 0f;
@@ -27,7 +32,7 @@ public class TimeSpentCounter : MonoBehaviour
     void Update()
     {}
 
-    IEnumerator  IncreaseTime()
+    IEnumerator  IncreaseTime() 
     { 
         while (colorsToSpawn.colorsToSpawn.Count != 0)
         {
@@ -38,9 +43,13 @@ public class TimeSpentCounter : MonoBehaviour
         if(colorsToSpawn.colorsToSpawn.Count == 0 )
         {
             colorsToSpawn.TimeText.text = (int)startTime +"";
-            
-
+            DataManager.Val=1;
         }
+        /* if(scoreAmount == 0 )
+        {
+            colorsToSpawn.TimeText2.text = (int)startTime +"";
+        } */
+
     }
 
     

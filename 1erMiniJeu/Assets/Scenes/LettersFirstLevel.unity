@@ -3516,7 +3516,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -5, y: 154}
+  m_AnchoredPosition: {x: -16.5, y: 251}
   m_SizeDelta: {x: 1064.1027, y: 680.5303}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1072910242
@@ -3658,7 +3658,12 @@ MonoBehaviour:
   isRandomized: 1
   TimeText: {fileID: 42705287}
   ScoreText: {fileID: 918363534}
+  TimeText2: {fileID: 0}
+  ScoreText2: {fileID: 0}
   scoreAmount: 0
+  WinPanel: {fileID: 1932049389}
+  LosePanel: {fileID: 44488859}
+  tim: {fileID: 0}
 --- !u!1 &1100345995
 GameObject:
   m_ObjectHideFlags: 0
@@ -5376,6 +5381,8 @@ MonoBehaviour:
   timeText: {fileID: 625422763}
   startTime: 0
   timeIncreasedPerSecond: 0
+  ScorePerSecond: {fileID: 0}
+  scoreAmount: 0
 --- !u!114 &1546561183
 MonoBehaviour:
   m_ObjectHideFlags: 0

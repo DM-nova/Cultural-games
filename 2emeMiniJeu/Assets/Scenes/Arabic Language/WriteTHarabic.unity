@@ -8465,7 +8465,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1499645150}
         m_TargetAssemblyTypeName: thFollowArabic, Assembly-CSharp
-        m_MethodName: b7click
+        m_MethodName: p7click
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

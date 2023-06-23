@@ -14,11 +14,15 @@ public class ScorePerSecond : MonoBehaviour
     public float scoreAmount;
     public float pointsDecreasedPerSecond;
 
+    TimeSpentCounter TimeSpentCounter;
+
     [SerializeField] public GameObject FixedColors;
     [SerializeField] public GameObject ColorsManager;
     
     void Start()
     {   
+        TimeSpentCounter= GameObject.FindObjectOfType<TimeSpentCounter>();
+
         gjtween= GameObject.FindObjectOfType<GoodJobTween>();
         gotween= GameObject.FindObjectOfType<GameOverTween>();
         colorsToSpawn= GameObject.FindObjectOfType<ColorsManager>();
@@ -27,16 +31,16 @@ public class ScorePerSecond : MonoBehaviour
         ScoreCoroutine = decreaseScore();
         StartCoroutine(ScoreCoroutine);
         
-        scoreAmount = 500f;
+       // scoreAmount = 5f;
         pointsDecreasedPerSecond = 1f;
     }
 
     void Update()
-    { }
+    {}
 
     IEnumerator  decreaseScore()
     { 
-        while ((colorsToSpawn.colorsToSpawn.Count != 0) && (scoreAmount>=0))
+        while ((colorsToSpawn.colorsToSpawn.Count != 0) && (scoreAmount>0))
         {
               scoreText.text =(int)scoreAmount +"";
               scoreAmount = scoreAmount - pointsDecreasedPerSecond * Time.deltaTime;
@@ -45,6 +49,11 @@ public class ScorePerSecond : MonoBehaviour
         if(colorsToSpawn.colorsToSpawn.Count == 0 )
         {
             colorsToSpawn.ScoreText.text = (int)scoreAmount +"";
+        }
+        if((int)scoreAmount == 0 )
+        {
+            //colorsToSpawn.TimeText2.text = (int)TimeSpentCounter.startTime +"";
+            colorsToSpawn.tim.SetActive(false);
         }
     }
 
