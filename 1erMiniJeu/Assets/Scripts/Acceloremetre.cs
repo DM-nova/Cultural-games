@@ -13,7 +13,7 @@ public class Acceloremetre : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       transform.Translate(new Vector2(Input.acceleration.x,Input.acceleration.y)*Time.deltaTime *2f); 
+       transform.Translate(new Vector2(Input.acceleration.x,Input.acceleration.y)*Time.deltaTime *2000f); 
 
        //transform.position = new Vector2(Mathf.Clamp(transform.position.x , -6,6),Mathf.Clamp(transform.position.y , -4,8));
     }

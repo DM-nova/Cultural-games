@@ -43,7 +43,7 @@ public class TimeSpentCounter : MonoBehaviour
         if(colorsToSpawn.colorsToSpawn.Count == 0 )
         {
             colorsToSpawn.TimeText.text = (int)startTime +"";
-            DataManager.Val=1;
+            //DataManager.Val=1;
         }
         /* if(scoreAmount == 0 )
         {
